@@ -21,10 +21,12 @@ body {
 }
 
 .left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     background-color: var(--secondary) ;
     width: 300px;
     height: 100vh;
-    box-shadow: 0px 100px 0px 0px black;
 }
 
 .logo-container {
@@ -45,15 +47,20 @@ body {
 .left-menu-options {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    
 
 }
 
 .left-menu-options img {
-    max-width: 30px;
+    max-width: 40px;
     padding: 10px;
 }
 
 .left-menu-options p {
+    display: flex;
+    align-items: center;
     font-size: 16px;
     font-weight: 500;
     color: var(--background);
@@ -61,8 +68,9 @@ body {
 .option-box {
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin: 10px 10px 0 10px;
+    width: 270px;
+    border-style:hidden;
 }
 
 .option-box img {
@@ -70,8 +78,9 @@ body {
     filter: invert(30%) sepia(14%) saturate(887%) hue-rotate(196deg) brightness(93%) contrast(90%);
 }
 
-.logout-box{
-    display: flex;
+.Logout-box{
+    margin-left: 10px;
+    margin-top: 300px;
 }
 
 .logout-button {
@@ -80,7 +89,6 @@ body {
     justify-content: center;
     width: 280px;
     height: 48px;
-    margin: 500px 0px 0px 10px;
     border-style: solid ;
     border-radius: 16px;
     background-color: var(--secondary);
@@ -89,4 +97,5 @@ body {
     font-size: 15px;
     color: var(--background);
     border-color: var(--background);
+    text-decoration: none;
 }
